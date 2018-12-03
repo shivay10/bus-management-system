@@ -1,0 +1,294 @@
+<html>
+<head>
+<style>
+body {
+  background-color: #91ced4;
+}
+body * {
+  box-sizing: border-box;
+}
+.header {
+  background-color: #327a81;
+  color: white;
+  font-size: 1.5em;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+.table-users {
+  border: 1px solid #327a81;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  max-width: calc(100% - 2em);
+  margin: 1em auto;
+  overflow: hidden;
+  width: 800px;
+}
+table {
+  width: 100%;
+}
+table td, table th {
+  color: #2b686e;
+  padding: 10px;
+}
+table td {
+  text-align: center;
+  vertical-align: middle;
+}
+table td:last-child {
+  font-size: 0.95em;
+  line-height: 1.4;
+  text-align: left;
+}
+table th {
+  background-color: #daeff1;
+  font-weight: 300;
+}
+table tr:nth-child(2n) {
+  background-color: white;
+}
+table tr:nth-child(2n+1) {
+  background-color: #edf7f8;
+}
+@media screen and (max-width: 700px) {
+  table, tr, td {
+    display: block;
+  }
+  td:first-child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+  }
+  td:not(:first-child) {
+    clear: both;
+    margin-left: 100px;
+    padding: 4px 20px 4px 90px;
+    position: relative;
+    text-align: left;
+  }
+  td:not(:first-child):before {
+    color: #91ced4;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+  }
+  td:nth-child(2):before {
+    content: 'Name:';
+  }
+  td:nth-child(3):before {
+    content: 'Email:';
+  }
+  td:nth-child(4):before {
+    content: 'Phone:';
+  }
+  td:nth-child(5):before {
+    content: 'Comments:';
+  }
+  tr {
+    padding: 10px 0;
+    position: relative;
+  }
+  tr:first-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header {
+    background-color: transparent;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    padding: 0;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  }
+  img {
+    border: 3px solid;
+    border-color: #daeff1;
+    height: 100px;
+    margin: 0.5rem 0;
+    width: 100px;
+  }
+  td:first-child {
+    background-color: #c8e7ea;
+    border-bottom: 1px solid #91ced4;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    width: 100%;
+  }
+  td:not(:first-child) {
+    margin: 0;
+    padding: 5px 1em;
+    width: 100%;
+  }
+  td:not(:first-child):before {
+    font-size: 0.8em;
+    padding-top: 0.3em;
+    position: relative;
+  }
+  td:last-child {
+    padding-bottom: 1rem !important;
+  }
+  tr {
+    background-color: white !important;
+    border: 1px solid #6cbec6;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    margin: 0.5rem 0;
+    padding: 0;
+  }
+  .table-users {
+    border: none;
+    box-shadow: none;
+    overflow: visible;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="table-users">
+   <div class="header">Buses Schedule</div>
+   
+   <table cellspacing="0">
+      <tr>
+         <th>Bus Name(bus no.)</th>
+         
+         <th>Departure from</th>
+         <th>Arrival to</th>
+         <th>Timings</th>
+         <th>Ticket prize</th>
+         <th>Bus Type</th>
+      </tr>
+
+      <tr>
+         <td>Himsuta(Hp36A 2020)</td>
+         <td>Dharamshala</td>
+         <td>Chandigarh</td>
+         <td>5:30am-11:00am</td>
+         <td> Rs.750 </td>
+         <td>Volvo</td>
+      </tr>
+
+      <tr>
+         <td>Sindicate(HP 63A 2013)</td>
+         <td>Shimla</td>
+         <td>Chandigarh</td>
+         <td>6:30pm-11:30pm</td>
+         <td>Rs. 785 </td>
+         <td>Scania</td>
+      </tr>
+
+      <tr>
+         <td>Jujhar(HP 69A 2987)</td>
+         <td>Bilaspur</td>
+         <td>Manali</td>
+         <td>5:30 am-4:30pm</td>
+         <td> Rs 600</td>
+         <td>Scania</td>
+      </tr>
+      
+      <tr>
+         <td>Wonder(HP 65A 5035 )</td>
+         <td>Manali</td>
+         <td>Chandigarh</td>
+         <td>5:30am-7:30pm</td>
+         <td>Rs 1000</td>
+         <td>Volvo</td>
+      </tr>
+      <tr>
+         <td>Jujhar(HP 69A 3040)</td>
+         <td>Bilaspur</td>
+         <td>Chandigarh</td>
+         <td>5:30am-10:30am</td>
+         <td>Rs 500</td>
+         <td>Volvo</td>
+      </tr>
+      <tr>
+         <td>SR Travles(HP 69A 2296)</td>
+         <td>Shimla</td>
+         <td>Manali</td>
+         <td>7:30 am-2:30pm</td>
+         <td>Rs 760</td>
+         <td>Scania</td>
+      </tr>
+      <tr>
+         <td>Fame Travles(HP 65A 4567)</td>
+         <td>Manali</td>
+         <td>Chandigarh</td>
+         <td>4:30pm-12:30am</td>
+         <td>Rs 1200</td>
+         <td>Volvo</td>
+      </tr>
+      <tr>
+         <td>SR Travles(HP 62A 2013)</td>
+         <td>Shimla </td>
+         <td>Chamba</td>
+         <td>4:30am -12:30pm</td>
+         <td>Rs 1365</td>
+         <td>Volvo</td>
+      </tr>
+      <tr>
+         <td>Pico Travels(HP 69A 3008)</td>
+         <td>Bilaspur</td>
+         <td>Chamba</td>
+         <td>5:00am-2:30pm</td>
+         <td>Rs 580</td>
+         <td>Volvo</td>
+      </tr>
+      <tr>
+         <td>Pico Travels(HP 89A 2013)</td>
+         <td>Bilaspur</td>
+         <td>Delhi</td>
+         <td>5:30am-4:30pm</td>
+         <td>Rs 1450</td>
+         <td>Scania</td>
+      </tr>
+      <tr>
+         <td>Atlas Travels(HP 65A 3457)</td>
+         <td>Shimla</td>
+         <td>Delhi</td>
+         <td>5:30am-4:30pm</td>
+         <td>Rs 3200</td>
+         <td>Volvo</td>
+      </tr>
+      <tr>
+         <td>Yatra Travels(HP79 A 2345)</td>
+         <td>Chamba</td>
+         <td>Delhi</td>
+         <td>10:30pm-12:30pm</td>
+         <td>Rs 3000</td>
+         <td>Scania</td>
+      </tr>
+       <tr>
+         <td>Himsuta(Hp36A 2020)</td>
+         <td>Dharamshala</td>
+         <td>Chandigarh</td>
+         <td>5:30am-11:00am</td>
+         <td> Rs.750 </td>
+         <td>Volvo</td>
+      </tr>
+
+   </table>
+</div>
+    <div class="footer" >
+<p align=left><button onclick=goback()>Go back to previous page</button></p>
+<p align=right><button onclick=goforward()>Go forward</button></p>
+  <p>Copyright@Shivay</p>
+</div>
+<script>function goforward()
+{
+window.history.forward();
+}
+function goback(){
+window.history.back(); }</script>
+</body>
+</html>

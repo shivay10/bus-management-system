@@ -1,0 +1,101 @@
+<html>
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+input[type=text], select, textarea {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  
+    padding: 12px;
+   
+  
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container
+{
+   margin: auto;
+    width: 50%;
+    
+}
+h2 {
+    text-shadow: 2px 2px 2px #CCCCCC;
+}
+
+
+</style>
+</head>
+<body background="images/bus11.jpg">
+<center><font size="100"><h2>Feedback Form</h2></font></center>
+<div class="container">
+  <form action="feedback" method="POST">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Full name</label>
+      </div>
+      <div class="col-75">
+        <input id="fname" type="text" placeholder="Username" name="usrnm">
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Email</label>
+      </div>
+      <div class="col-75">
+       <input class="fname" type="text" placeholder="Email" name="email">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Feedback</label>
+      </div>
+      <div class="col-75">
+        
+        <textarea id="subject" name="message" rows="10" cols="10" placeholder="Give us your feedback"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+
+
+</form>
+<div class="footer" >
+<p align=left><button onclick=goback()>Go back to previous page</button></p>
+<p align=right><button onclick=goforward()>Go forward</button></p>
+ 
+</div>
+<script>function goforward()
+{
+window.history.forward();
+}
+function goback(){
+window.history.back(); }</script>
+</body>
+</html>
